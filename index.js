@@ -1,0 +1,1 @@
+document.getElementById("myNumber").stepUp(100);

@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.head{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.left1 ul li a{
+    color: white;
+}
+.right1 ul li a{
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 3px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li:last-child{
+    margin-right: 50px;
+}
+.head1{
+    width: 100%;
+    height: 80px;
+    background-color: whitesmoke;
+}
+.head1 img{
+    width: 300px;
+    height: 80px;
+    margin-left: 30px;
+}
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: #0606e8;
+    transition: all .5s;
+
+}
+ a:hover::after{
+    width: 100%;
+}
+button{
+    width: 150px;
+    height: 35px;
+    background-color: rgb(210, 170, 9);
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 10%;
+    border: none;
+
+}
+button:hover{
+    background-color: rgb(12, 20, 240);
+    cursor:pointer;
+    color: white;
+}
+
+.about{
+    width: 100%;
+    height: 100px;
+    background-color: #000029;
+}
+.aboutleft{
+    width: 50%;
+    height: 100px;
+    float: left;
+    color: white;
+    margin-top: 20px;
+}
+.gallery{
+    width: 1200px;
+    height: 120vh;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.gallery1 img{
+ width: 200px;
+ height: 200px;
+ float: left;
+ margin: 10px;
+}
+   
+
+
+.footer{
+    width: 100%;
+    height: 70vh;
+    background-color: #565656;
+    margin-top: 230px;
+}
+.footerleft{
+    width: 20%;
+    height: 60vh;
+    float: left;
+    margin-left: 40px;
+}
+.footerright{
+    width: 20%;
+    height: 60vh;
+    float: left;
+    margin-left: 60px;
+}
+.footerleft h3{
+    color: white;
+    margin-top: 35px;
+}
+.footerright h3{
+    color: white;
+    margin-top: 35px;
+}
+.bg2{
+    background-image: url(work-net.jpg);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 70vh;
+}
+.dark2{
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(26, 25, 25, 0.888);
+}
+.bg2 h3{
+    margin: auto;
+    text-align: center;
+    padding-top: 15%;
+    color: white;
+    margin-bottom: 20px;
+}
+.bg2 button{
+    text-align: center;
+    margin-left: 45%;
+}

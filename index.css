@@ -1,0 +1,429 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.head{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+.left1 ul li a{
+    color: white;
+}
+.right1 ul li a{
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 3px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li:last-child{
+    margin-right: 50px;
+}
+
+.head1{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+.head1 img{
+    width: 300px;
+    height: 80px;
+    margin-left: 30px;
+}
+li a::after{
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: #0606e8;
+    transition: all .5s;
+
+}
+ a:hover::after{
+    width: 100%;
+}
+.bg{
+    background-image: url(mainimg.png);
+    background-position-y: center;
+    background-size: cover;
+    height: 90vh;
+    position: absolute;
+    width: 100%;
+    animation-name: bgimg;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes bgimg {
+    0%{
+        background-image: url(bg4.png);
+        background-size: cover;
+    }
+    30%{
+        background-image: url(mainimg.png);
+        background-size: cover;
+    }
+    50%{
+        background-image: url(mainimg.png);
+        background-size: cover;
+    }
+    70%{
+        background-image: url(bg4.png);
+        background-size: cover;
+    }
+    100%{
+        background-image: url(mainimg.png);
+        background-size: cover;
+    }
+}
+.head2{
+    position: relative;
+    display: inline-block;
+    margin-top: 14%;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+    margin-left: 20px;
+    
+}
+button{
+    width: 150px;
+    height: 35px;
+    background-color: rgb(210, 170, 9);
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 10%;
+    border: none;
+
+}
+button:hover{
+    background-color: rgb(12, 20, 240);
+    cursor:pointer;
+    color: white;
+}
+.p1{
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 20px;
+    position: relative;
+}
+.scroll{
+    width: 100%;
+    color: blue;
+    font-size: 15px;
+}
+.welcome{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 550px;
+}
+.welcome p{
+    margin-left: 50px;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 28px;
+}
+.left{
+    width: 70%;
+    height: 100vh;
+}
+.right{
+    width: 40%;
+    height: 90vh;
+    display: flex;
+    
+}
+form{
+    width: 65%;
+    height: 75vh;
+    background-color: rgba(128, 128, 128, 0.295);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin-left: 100px;
+    margin-top: 55px;
+}
+input,select,textarea{
+    width: 100%;
+    height: 35px;
+    padding: 10px 25px;
+    margin-bottom: 10px;
+}
+span{
+    color: rgb(118, 5, 5);
+}
+.container{
+    width: 1200px;
+    height: 100vh;
+    margin: auto;
+    
+}
+.courses h3{
+    margin-top: 50px;
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.courses1{
+    width: 300px;
+    float: left;
+    border: 1px solid #ccc; 
+    transition: 1s; 
+
+}
+.courses1 img{
+    width: 100%;
+    height: auto;
+}
+.courses1 img:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+
+.description{
+    padding: 15px;
+    text-align: center;
+}
+table{
+    width: 1200px;
+    height: 300px;
+    border: 1px solid;
+    margin: auto; 
+    border-collapse: collapse; 
+
+}
+td {
+    padding: 15px;
+    text-align: left;
+    border:1px solid #565656;
+
+
+}
+  th{
+    color: white;
+    background-color: #00005a;
+    padding: 15px;
+    text-align: center;
+    border:1px  solid #565656;
+}
+.new{
+    margin-top: 80px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.courses2{
+    width: 280px;
+    float: left;
+    border: none;
+    height: 300px; 
+    border: 1px solid #ccc;
+    margin: 10px;
+    margin-left: 22px;
+    transition: 1s;
+}
+.courses2 img{
+    width: 100px;
+    height: 80px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.courses2 img:hover{
+    transform: scale(1.5);
+    z-index: 2;
+}
+
+.container2{
+    width: 100%;
+    height: 70vh;  
+}
+.choose{
+    width: 1200px;
+    height: 50vh;
+    margin: auto;
+}
+.chooseleft{
+    width: 50%;
+    height: 20vh;
+    float: left;
+}
+.chooseright{
+    width: 50%;
+    height: 20vh;
+    float: left;
+}
+.bg1{
+    background-image: url(work-net.jpg);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    height: 50vh;
+    margin-top: 30px;
+
+}
+.dark1{
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(26, 25, 25, 0.801);
+}
+.profile{
+    float: left;
+    transition: 1s;
+}
+.profile img{
+    margin-left: 140px;
+    margin-top: 60px;
+    width: 60px;
+    height: 60px;
+}
+.profile p{
+    font-size: 20px;
+    color: white;
+    margin-left: 140px;
+}
+.profile p:hover{
+    transform: scaleY(1.5);
+    z-index: 2;
+}
+
+.courses3{
+    width: 280px;
+    float: left;
+    border: none;
+    height: 300px; 
+    margin: 10px;
+    margin-left: 22px;
+    height: 30vh;
+    background-color: rgb(235, 234, 234);
+    border-radius: 5px;
+}
+.courses3 img{
+    width: 100px;
+    height: 80px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.place{
+    width: 1200px;
+    height: 30vh;
+    margin: auto;
+}
+.placeleft{
+    width: 50%;
+    height: 200px;
+    float: left;
+}
+.placeright{
+    width: 50%;
+    height: 200px;
+    float: left;
+}
+.place h3{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.placedin{
+    width: 100%;
+    height: 200px;
+}
+.placedinleft{
+    width: 200px;
+    height: 60px;
+    float: left;
+    margin-left: 42px;
+    margin-top: 30px;
+
+}
+.placedin h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.training img{
+    width: 100%;
+    margin: auto;
+}
+.footer{
+    width: 100%;
+    height: 70vh;
+    background-color: #565656;
+    margin-top: 60px;
+    padding-top: 30px;
+
+}
+.footerleft{
+    width: 20%;
+    height: 60vh;
+    float: left;
+    margin-left: 40px;
+}
+.footerright{
+    width: 20%;
+    height: 60vh;
+    float: left;
+    margin-left: 60px;
+}
+.footerleft h3{
+    color: white;
+    margin-top: 35px;
+}
+.footerright h3{
+    color: white;
+    margin-top: 35px;
+}
+.bg2{
+    background-image: url(work-net.jpg);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 70vh;
+}
+.dark2{
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(26, 25, 25, 0.888);
+}
+.bg2 h3{
+    margin: auto;
+    text-align: center;
+    padding-top: 15%;
+    color: white;
+    margin-bottom: 20px;
+}
+.bg2 button{
+    text-align: center;
+    margin-left: 45%;
+}
